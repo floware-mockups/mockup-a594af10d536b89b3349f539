@@ -1,0 +1,184 @@
+{
+  "title": "Monitoraggio dei consumi energetici",
+  "description": "Prototipo per controllare i consumi mensili degli edifici pubblici, confrontare le variazioni e registrare le letture. Il grafico mensile è rappresentato da una tabella comparativa, navigabile insieme alle altre viste.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo dei consumi e confronto mensile per edifici inventati. Seleziona le altre pagine per consultare gli edifici o inserire una lettura.",
+      "metrics": [
+        {
+          "label": "Consumo del mese",
+          "value": "18,4 MWh"
+        },
+        {
+          "label": "Variazione mensile",
+          "value": "−6,2%"
+        },
+        {
+          "label": "Edifici monitorati",
+          "value": "12"
+        },
+        {
+          "label": "Letture da verificare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Mese",
+        "Consumo (MWh)",
+        "Variazione"
+      ],
+      "rows": [
+        [
+          "Gennaio",
+          "22,1",
+          "+4,8%"
+        ],
+        [
+          "Febbraio",
+          "20,7",
+          "−6,3%"
+        ],
+        [
+          "Marzo",
+          "19,8",
+          "−4,3%"
+        ],
+        [
+          "Aprile",
+          "18,4",
+          "−7,1%"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "edifici",
+      "title": "Edifici",
+      "description": "Consulta e filtra gli edifici monitorati e i relativi consumi più recenti.",
+      "metrics": [
+        {
+          "label": "Edifici attivi",
+          "value": "12"
+        },
+        {
+          "label": "Consumo medio",
+          "value": "1,53 MWh"
+        }
+      ],
+      "columns": [
+        "Edificio",
+        "Zona",
+        "Categoria",
+        "Consumo mensile (MWh)",
+        "Mese rilevazione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Palazzo Lumo",
+          "Nubi Nord",
+          "Uffici",
+          "1,84",
+          "Aprile",
+          "Regolare"
+        ],
+        [
+          "Sala Vela",
+          "Nubi Centro",
+          "Cultura",
+          "1,26",
+          "Aprile",
+          "Regolare"
+        ],
+        [
+          "Scuola Brina",
+          "Vela Est",
+          "Istruzione",
+          "2,08",
+          "Aprile",
+          "Da verificare"
+        ],
+        [
+          "Biblioteca Quarzo",
+          "Lumo Ovest",
+          "Cultura",
+          "0,94",
+          "Aprile",
+          "Regolare"
+        ],
+        [
+          "Centro Nembi",
+          "Vela Sud",
+          "Servizi",
+          "1,41",
+          "Aprile",
+          "Regolare"
+        ],
+        [
+          "Magazzino Orsa",
+          "Nubi Sud",
+          "Deposito",
+          "0,78",
+          "Aprile",
+          "Da verificare"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "letture",
+      "title": "Letture mensili",
+      "description": "Registra una nuova lettura energetica. Le etichette dei campi corrispondono alle prime colonne della tabella.",
+      "metrics": [
+        {
+          "label": "Letture del mese",
+          "value": "12"
+        },
+        {
+          "label": "In attesa di verifica",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Edificio",
+        "Mese rilevazione",
+        "Consumo mensile (MWh)",
+        "Fonte lettura",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Palazzo Lumo",
+          "Aprile",
+          "1,84",
+          "Contatore",
+          "Verificata"
+        ],
+        [
+          "Sala Vela",
+          "Aprile",
+          "1,26",
+          "Contatore",
+          "Verificata"
+        ],
+        [
+          "Scuola Brina",
+          "Aprile",
+          "2,08",
+          "Stima",
+          "Da verificare"
+        ]
+      ],
+      "form": [
+        "Edificio",
+        "Mese rilevazione",
+        "Consumo mensile (MWh)",
+        "Fonte lettura",
+        "Stato"
+      ]
+    }
+  ]
+}
